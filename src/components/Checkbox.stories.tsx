@@ -3,20 +3,19 @@ import { Checkbox, CheckboxProps } from './Checkbox'
 import { Text } from './Text'
 
 export default {
-        title: 'Components/Checkbox',
-        component: Checkbox,
-        args: { },
-        argTypes: { },
-        decorators: [
-                (Story) => {
-                        return (
-                                <label className='flex items-center gap-2'>
-                                        {Story()}
-                                        <Text size='sm'>Lembrar-me de mim por 30 dias</Text>
-                                </label>
-                        )
-                }
-        ]
-} as Meta<CheckboxProps>
-
-export const Default: StoryObj<CheckboxProps> = { }
+	title: 'Components/Checkbox',
+	component: Checkbox,
+	decorators: [
+		(Story) => {
+			return (
+				<label className='flex items-center gap-2'>
+					{Story()}
+					<Text size='sm'>Lembrar-me de mim por 30 dias</Text>
+				</label>
+				)
+			}
+		]
+	} as Meta<CheckboxProps>
+	
+	export const Default: StoryObj<CheckboxProps> = { }
+	
